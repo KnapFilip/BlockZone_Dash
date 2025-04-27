@@ -70,7 +70,7 @@ $result = $pdo->query("SELECT * FROM blacklist");
 
 <head>
     <meta charset="UTF-8">
-    <title>BlockZone - Tresty</title>
+    <title>Blacklist</title>
     <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/advanced.css">
@@ -85,23 +85,25 @@ $result = $pdo->query("SELECT * FROM blacklist");
             <li><a href="../users/server.php">Server</a></li><br>
             <li><a href="../users/vip.php">VIP</a></li><br>
             <li><a href="../users/shop.php">Shop</a></li><br>
-            <li><a href="../users/support.php">Vytvořit Ticket</a></li><br>
+            <li><a href="../users/support.php">Vytvořit Ticketu</a></li><br>
             <li><a href="../users/tickets.php">Moje Tickety</a></li><br>
 
+            <!-- Admin dropdown, zobrazuje se pouze pro role 2, 4, a 5 -->
             <?php if (in_array($role_id, [2, 4, 5])): ?>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Admin</a>
                     <div class="dropdown-content">
-                        <a href="dashboard.php">Dashboard</a>
-                        <a href="players.php">Hráči</a>
-                        <a href="punishments.php">Tresty</a>
-                        <a href="punish.php">Zápis trestu</a>
-                        <a href="records.php">Záznamy trestů</a>
-                        <a href="tickets.php">Tickety</a>
+                        <a href="../admin/dashboard.php">Dashboard</a>
+                        <a href="../admin/players.php">Hráči</a>
+                        <a href="../admin/punishments.php">Tresty</a>
+                        <a href="../admin/punish.php">Zápis trestu</a>
+                        <a href="../admin/records.php">Záznamy trestů</a>
+                        <a href="../admin/tickets.php">Tickety</a>
                     </div>
                 </li>
             <?php endif; ?>
 
+            <!-- Developer dropdown, zobrazuje se pouze pro role 3, 4, a 5 -->
             <?php if (in_array($role_id, [3, 4, 5])): ?>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Developer</a>
@@ -111,10 +113,12 @@ $result = $pdo->query("SELECT * FROM blacklist");
                         <a href="../development/work.php">To-Do</a>
                         <a href="../development/tickets.php">Tickety</a>
                         <a href="../development/stats.php">Statistiky pluginů</a>
+                        <a href="#">PLAN</a>
                     </div>
                 </li>
             <?php endif; ?>
 
+            <!-- Managment dropdown, zobrazuje se pouze pro role 4 a 5 -->
             <?php if (in_array($role_id, [4, 5])): ?>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Managment</a>
@@ -126,12 +130,13 @@ $result = $pdo->query("SELECT * FROM blacklist");
                         <a href="../managment/punish.php">Zápis trestu</a>
                         <a href="../managment/records.php">Záznamy trestů</a>
                         <a href="../managment/tickets.php">Tickety</a>
-                        <a href="../managment/team_detail.php">Team</a>
+                        <a href="../managment/team_details.php">Team</a>
+                        <a href="../managment/blacklist.php" class="active">Blacklist</a>
+                        <a href="#">PLAN</a>
                     </div>
                 </li>
-            <?php endif; ?>
-
-            <li><a href="../php/logout.php"><img src="../images/log_out.png" alt="Log-out" width="0.75%" height="0.75%"> Odhlásit se</a></li><br>
+            <?php endif; ?><br><br>
+            <li><a href="../php/logout.php"><img src="../images/log_out.png" alt="Log-out" width="0.75%" height="0.75%">Odhlásit se</a></li><br>
         </ul>
     </nav>
 </header>

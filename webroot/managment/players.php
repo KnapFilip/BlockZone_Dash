@@ -48,7 +48,7 @@ $players = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <meta charset="UTF-8">
-    <title>Moje Tickety</title>
+    <title>Hráči</title>
     <link rel="icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/advanced.css">
@@ -71,12 +71,12 @@ $players = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Admin</a>
                     <div class="dropdown-content">
-                        <a href="dashboard.php">Dashboard</a>
-                        <a href="players.php" class="active">Hráči</a>
-                        <a href="punishments.php">Tresty</a>
-                        <a href="punish.php">Zápis trestu</a>
-                        <a href="records.php">Záznami trestů</a>
-                        <a href="tickets.php">Tickety</a>
+                        <a href="../admin/dashboard.php">Dashboard</a>
+                        <a href="../admin/players.php">Hráči</a>
+                        <a href="../admin/punishments.php">Tresty</a>
+                        <a href="../admin/punish.php">Zápis trestu</a>
+                        <a href="../admin/records.php">Záznamy trestů</a>
+                        <a href="../admin/tickets.php">Tickety</a>
                     </div>
                 </li>
             <?php endif; ?>
@@ -91,6 +91,7 @@ $players = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <a href="../development/work.php">To-Do</a>
                         <a href="../development/tickets.php">Tickety</a>
                         <a href="../development/stats.php">Statistiky pluginů</a>
+                        <a href="#">PLAN</a>
                     </div>
                 </li>
             <?php endif; ?>
@@ -101,16 +102,18 @@ $players = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <a href="#" class="dropbtn">Managment</a>
                     <div class="dropdown-content">
                         <a href="../managment/dashboard.php">Dashboard</a>
-                        <a href="../managment/finance.php">Pluginy</a>
-                        <a href="../managment/players.php">Hráči</a>
+                        <a href="../managment/finance.php">Finance</a>
+                        <a href="../managment/players.php" class="active">Hráči</a>
                         <a href="../managment/punishments.php">Tresty</a>
                         <a href="../managment/punish.php">Zápis trestu</a>
-                        <a href="../managment/records.php">Záznami trestů</a>
+                        <a href="../managment/records.php">Záznamy trestů</a>
                         <a href="../managment/tickets.php">Tickety</a>
-                        <a href="../managment/team_detail.php">Tickety</a>
+                        <a href="../managment/team_details.php">Team</a>
+                        <a href="../managment/blacklist.php">Blacklist</a>
+                        <a href="#">PLAN</a>
                     </div>
                 </li>
-            <?php endif; ?>
+            <?php endif; ?><br><br>
             <li><a href="../php/logout.php"><img src="../images/log_out.png" alt="Log-out" width="0.75%" height="0.75%">Odhlásit se</a></li><br>
         </ul>
     </nav>

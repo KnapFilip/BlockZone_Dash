@@ -55,7 +55,7 @@ $role_text = $role_names[$role_id] ?? 'Neznámá role';
     <link rel="stylesheet" href="../css/dashboard_user.css">
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/advanced.css">
-    <title>BlockZone - Dashboard</title>
+    <title>Dashboard</title>
 </head>
 <header>
     <nav class="nav">
@@ -105,7 +105,7 @@ $role_text = $role_names[$role_id] ?? 'Neznámá role';
                     <a href="#" class="dropbtn">Managment</a>
                     <div class="dropdown-content">
                         <a href="../managment/dashboard.php">Dashboard</a>
-                        <a href="../managment/finance.php">Pluginy</a>
+                        <a href="../managment/finance.php">Finance</a>
                         <a href="../managment/players.php">Hráči</a>
                         <a href="../managment/punishments.php">Tresty</a>
                         <a href="../managment/punish.php">Zápis trestu</a>

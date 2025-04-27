@@ -51,7 +51,7 @@ $role_text = $role_names[$role_id] ?? 'Neznámá role';
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/advanced.css">
     <link rel="stylesheet" href="../css/profile.css">
-    <title>BlockZone</title>
+    <title>Profil</title>
 </head>
 <header>
     <nav class="nav">
@@ -74,7 +74,7 @@ $role_text = $role_names[$role_id] ?? 'Neznámá role';
                         <a href="../admin/players.php">Hráči</a>
                         <a href="../admin/punishments.php">Tresty</a>
                         <a href="../admin/punish.php">Zápis trestu</a>
-                        <a href="../admin/records.php">Záznami trestů</a>
+                        <a href="../admin/records.php">Záznamy trestů</a>
                         <a href="../admin/tickets.php">Tickety</a>
                     </div>
                 </li>
@@ -90,6 +90,7 @@ $role_text = $role_names[$role_id] ?? 'Neznámá role';
                         <a href="../development/work.php">To-Do</a>
                         <a href="../development/tickets.php">Tickety</a>
                         <a href="../development/stats.php">Statistiky pluginů</a>
+                        <a href="#">PLAN</a>
                     </div>
                 </li>
             <?php endif; ?>
@@ -100,16 +101,18 @@ $role_text = $role_names[$role_id] ?? 'Neznámá role';
                     <a href="#" class="dropbtn">Managment</a>
                     <div class="dropdown-content">
                         <a href="../managment/dashboard.php">Dashboard</a>
-                        <a href="../managment/finance.php">Pluginy</a>
+                        <a href="../managment/finance.php">Finance</a>
                         <a href="../managment/players.php">Hráči</a>
                         <a href="../managment/punishments.php">Tresty</a>
                         <a href="../managment/punish.php">Zápis trestu</a>
-                        <a href="../managment/records.php">Záznami trestů</a>
+                        <a href="../managment/records.php">Záznamy trestů</a>
                         <a href="../managment/tickets.php">Tickety</a>
                         <a href="../managment/team_details.php">Team</a>
+                        <a href="../managment/blacklist.php">Blacklist</a>
+                        <a href="#">PLAN</a>
                     </div>
                 </li>
-            <?php endif; ?>
+            <?php endif; ?><br><br>
             <li><a href="../php/logout.php"><img src="../images/log_out.png" alt="Log-out" width="0.75%" height="0.75%">Odhlásit se</a></li><br>
         </ul>
     </nav>
