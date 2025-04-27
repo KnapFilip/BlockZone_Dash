@@ -1,0 +1,58 @@
+.body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* dva sloupce */
+    gap: 80px;
+    max-width: 1250px;
+    margin: 0 auto;
+    color: white;
+}
+
+.body > div {
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* zarovnání veškerého obsahu na střed */
+}
+
+.profile-info p,
+.punishment p {
+    text-align: left;
+    width: 100%;
+}
+
+button {
+    background-color: #484649;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #3a3a3a;
+}
+
+button:active {
+    background-color: #2a2a2a;
+    transform: translateY(1px);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

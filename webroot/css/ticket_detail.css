@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Temnější pozadí */
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+    width: 50%; /* Lehce širší pro lepší psaní */
+    min-height: 100px;
+    background-color: #1e1e1e;
+    border: 1px solid #4caf50;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #66bb6a; /* Světlejší zelená při focusu */
+    background-color: #2c2c2c;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.mb-3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#chat-messages {
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    border: 1px solid #4caf50;
+    margin: 20px auto;
+    padding: 15px;
+    width: 60%;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#chat-messages div {
+    margin-bottom: 10px;
+}
+
+small {
+    font-size: 12px;
+    color: #aaaaaa;
+}

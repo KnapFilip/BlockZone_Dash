@@ -1,0 +1,120 @@
+body {
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.shop-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.shop-filter {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.shop-filter button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.shop-filter button:hover {
+    background-color: #3e8e41;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.shop-item {
+    background-color: #2f2f2f;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+    justify-items: center;
+}
+
+.shop-item {
+    background-color: #2f2f2f;
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.shop-item.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.item-description {
+    font-size: 15px;
+    color: #ddd;
+    margin: 10px 0;
+    min-height: 60px;
+}
+
+.item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffc107;
+    margin: 10px 0;
+}
+
+.buy-button {
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+    background-color: #43a047;
+    transform: scale(1.05);
+}

@@ -1,0 +1,88 @@
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 80%;
+    margin-left: 15%;
+    border-collapse: collapse;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+}
+
+th {
+    background-color: #007BFF;
+    background-color: transparent;
+    color: white;
+}
+
+.edit-btn, .delete-btn, .add-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #28a745;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.card p {
+    margin: 5px 0;
+}
+input{
+    background-color: transparent;
+    border: 2px white;
+    color: white;
+    text-align: center;
+}
+
+.add-btn {
+    background-color: #28a745;
+}

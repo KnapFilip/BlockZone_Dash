@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kontejner pro tabulku */
+.table-container {
+    max-width: 97.5%;
+    margin-left: 14%;
+    padding: 20px;
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titul tabulky */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tabulka */
+table {
+    width: 97.5%;
+    background-color: #4b4b4b;
+    border: 2px white solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Záhlaví tabulky */
+th, td {
+    padding: 12px 15px;
+    border: 1px white solid;
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Záhlaví */
+th {
+    background-color: #004080;
+    color: white;
+}
+
+/* Hover efekt pro řádky */
+tr:hover {
+    background-color: #797979;
+}
+
+/* Styly pro vstupy v tabulce */
+.punishments-table input[type="text"],
+.punishments-table input[type="number"],
+.punishments-table textarea {
+    width: 90%;
+    padding: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #4b4b4b;
+    text-align: center;
+    color: white;
+}
+.punishments-table textarea {
+    resize: vertical;
+    min-width: 350px;
+    min-height: 100px;
+}
+
+/* Styly pro tlačítka Akce */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Tlačítko pro uložení */
+.save-btn, .delete-btn {
+    padding: 6px 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+/* Uložení: zelené tlačítko */
+.save-btn {
+    background-color: #4CAF50; /* zelená */
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Mazání: červené tlačítko */
+.delete-btn {
+    background-color: #f44336; /* červená */
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+}
+
+/* Základní styl pro formuláře */
+.form {
+    max-width: 600px;
+    margin-left: 38%;
+    padding: 20px;
+    background-color: #4b4b4b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 8px;
+}
+
+/* Titul formuláře */
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styly pro vstupy v formuláři */
+.form input,
+.form textarea,
+.form select,
+.form option {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #4b4b4b;
+    color: white;
+    text-align: center;
+    transition: border-color 1s;
+}
+
+/* Vzhled pro labely */
+.form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Styly pro tlačítko ve formuláři */
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 1s;
+}
+
+/* Tlačítko: Hover efekt */
+.form button:hover {
+    background-color: #327736;
+}
+
+/* Styl pro textarea (větší mezera pro text) */
+.form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Styl pro chybové hlášení */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Různé malinké mezery mezi jednotlivými poli */
+.form div {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,28 @@
+.max-w-4xl{
+    background-color: #2f2f2f;
+    color: white;
+    text-align: center;
+}
+.mb-4{
+    background-color: #484649;
+    color: white;
+    text-align: center;
+}
+.text-gray-600{
+    color: white;   
+}
+.text-xl{
+    color: white;
+}
+.notification-badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+  

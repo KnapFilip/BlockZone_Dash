@@ -1,0 +1,146 @@
+:root {
+    --bg-page: #484649;
+    --bg-table: #3b393b;
+    --color-text: #ffffff;
+    --color-primary: #4a90e2;
+    --color-income: #27ae60;
+    --color-expense: #e74c3c;
+    --color-accent: #484649;
+    --radius: 0.5rem;
+    --spacing: 1rem;
+    --font-base: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-page);
+    font-family: var(--font-base);
+    color: var(--color-text);
+  }
+  
+  main {
+    max-width: 900px;
+    margin: var(--spacing) auto;
+    padding: var(--spacing);
+    background: var(--bg-table);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing);
+    color: var(--color-primary);
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: var(--spacing);
+  }
+  
+  thead tr {
+    background: var(--color-accent);
+  }
+  
+  thead th {
+    padding: 0.75rem var(--spacing);
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  tbody tr {
+    background: var(--bg-table);
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #4b484b;
+  }
+  
+  tbody td {
+    padding: 0.75rem var(--spacing);
+    font-size: 0.9rem;
+  }
+  
+  tfoot tr {
+    background: var(--color-accent);
+  }
+  
+  tfoot input,
+  tfoot select,
+  tfoot button {
+    width: 100%;
+    background: var(--color-accent);
+    padding: 0.5rem;
+    border: 1px solid #ccd6dd;
+    color: var(--color-text);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    box-sizing: border-box;
+  }
+  
+  tfoot select {
+    appearance: none;
+    background: var(--color-accent);
+    background: var(--color-accent);
+    background-size: 1rem;
+  }
+  
+  tfoot input:focus,
+  tfoot select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  tfoot button {
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  tfoot button:hover {
+    background: darken(var(--color-primary), 10%);
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      padding: 0.5rem;
+    }
+    thead {
+      display: none;
+    }
+    tbody tr {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-bottom: var(--spacing);
+      border: 1px solid var(--color-accent);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    tbody td {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem var(--spacing);
+    }
+    tbody td::before {
+      content: attr(data-label);
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    tfoot tr,
+    tfoot td,
+    tfoot form {
+      display: block;
+    }
+    tfoot td {
+      padding: 0.5rem 0;
+    }
+  }
+  

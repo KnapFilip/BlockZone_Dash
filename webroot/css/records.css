@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+}
+
+.table-container {
+    max-width: 1000px;
+    margin-left: 28%;
+    padding: 20px;
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+table {
+    width: 100%;
+    border: 2px white solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px white solid;
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+}
+
+tr:hover {
+    background-color: #797979;
+}

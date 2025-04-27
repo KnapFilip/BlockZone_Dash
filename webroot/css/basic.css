@@ -1,0 +1,129 @@
+body {
+    background-color: #484649;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    width: 100%;
+    overflow-x: hidden;
+}
+html {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    height: 75px;
+}
+footer {
+    background-color: transparent;
+    margin-top: 15%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+}
+nav {
+    background-color: #3e3c3f;
+    position: absolute;
+    color: white;
+    width: 250px;
+    margin-top: 0px;
+    height: 1100px;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+    width: 100%;
+}
+
+.navbar img {
+    height: 70px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #3e3c3f;
+    align-items: center;
+}
+
+nav ul li {
+    width: 100%;
+    background-color: #3e3c3f;
+}
+
+nav a {
+    display: block;
+    background-color: #3e3c3f;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-radius: 0;
+    position: relative;
+}
+
+nav a:hover {
+    background-color: #555;
+    text-decoration: underline;
+    width: 100%;
+}
+
+nav ul li.dropdown > a:after {
+    content: ' ▼';
+    font-size: 12px;
+    background-color: #3e3c3f;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    background-color: #444;
+    border: 2px rgb(110, 110, 110) solid;
+    min-width: 100%;
+    position: static;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+    background-color: #444;
+}
+
+nav ul li.dropdown:hover > a:after {
+    content: ' ▲';
+}
+
+.active {
+    background-color: #4E871C;
+}
+

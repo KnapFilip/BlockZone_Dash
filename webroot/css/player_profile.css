@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+.profile-container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #4b4b4b;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: white;
+}
+
+.player-info p {
+    margin: 10px 0;
+    color: white;
+    font-size: 16px;
+}
+
+.online {
+    color: green;
+    font-weight: bold;
+}
+
+.offline {
+    color: red;
+    font-weight: bold;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+}
+
+.button.add {
+    background-color: #27ae60;
+}
+
+.button.add:hover {
+    background-color: #2ecc71;
+}
+
+.button.back {
+    background-color: #2980b9;
+}
+
+.button.back:hover {
+    background-color: #3498db;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: white;
+    background: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+td, th {
+    padding: 12px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr.warn { background-color: #886800; }
+tr.ban { background-color: #96000c; }
+tr.permaban { background-color: #96000c; }
+tr.permawarn { background-color: #886800; }
+tr.mute { background-color: #006b7e; }
+tr.permamute { background-color: #006b7e; }
+
+tr:hover {
+    background-color: #3f3f3f;
+}
+
+.fa-circle {
+    font-size: 0.7em;
+    margin-right: 5px;
+}
+
+.fa-user, .fa-list, .fa-plus, .fa-arrow-left, .fa-gavel, .fa-calendar-alt, .fa-id-badge, .fab.fa-discord {
+    margin-right: 5px;
+}
+.no-punishments {
+    padding: 10px;
+    background-color: #e6f7e6;
+    border: 1px solid #b2d8b2;
+    color: #2d662d;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.no-punishments i {
+    margin-right: 8px;
+}

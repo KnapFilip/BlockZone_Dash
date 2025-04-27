@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.max-w-lg{
+    background-color: #2f2f2f;
+    color: white;
+    text-align: center;
+}
+.mb-4{
+    text-align: center;
+}
+input{
+    background-color: transparent;
+    text-align: center;
+}
+option{
+    background-color: transparent;
+    text-align: center;
+    background-color: #2f2f2f;
+}
+select{
+    background-color: transparent;
+    text-align: center;
+}
+textarea{
+    background-color: transparent;
+    text-align: center;
+}
